@@ -1,0 +1,138 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #f3f1e5;
+}
+.topbar {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    position: fixed;
+}
+.btn-fade {
+    width: 100%;
+    height: 100%;
+    background-color: #f3f1e5;
+    color: white;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    object-fit: cover;
+}
+.btn-fade:hover {
+    opacity: 0.7;
+}
+.btn-fade i{
+    color: rgb(255, 247, 247);
+    font-size: 15px;
+    width: 18px;
+}
+.fa-ellipsis-h{
+    background: none;
+    font-size: 10px;
+    width: 20px;
+}
+.circle-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(138, 133, 133);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.profile{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    justify-content: center;
+}
+.iop{
+    width: 20px;
+    height: 20px;
+}
+.social-icons .social-icon i {
+    font-size: 30px;
+    color: gray;
+}
+.shawn-card {
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: opacity 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.shawn-card:hover {
+    background-color: transparent;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border: 2px solid #ffffff;
+}
+.card-header{
+    background-color: white;
+}
+.card-header i {
+    color: black;
+    background-color: white;
+    padding-right: px; /* Adds space between the icon and the heading */
+}
+.shawn-card i{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.giga{
+    width: 100%;
+}
+#carouselExample .carousel-item {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /
+}
+
+#carouselExample iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#carouselExampleControls .carousel-item {
+    height: 300px;
+}
+
+#carouselExampleControls .carousel-item .row {
+    height: 100%;
+    align-items: center;
+}
+.iol{
+    width:flex;
+}

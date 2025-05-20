@@ -1,0 +1,29 @@
+.ki{
+    width: 50px;
+    height: 50px;
+}
+.mt-0{
+    margin-top: 700px;
+}
+.jun{
+    width: 400px;
+    height: 400px;
+}
+.input-group-text {
+    background-color: #fff7f7;
+    border-right: none;
+}
+.form-control {
+    border-left: none;
+    box-shadow: none;
+    background-color: #dad9d9;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color: #aaa;
+}
+.sexy{
+    background-color: black;
+    height: 100px;
+    margin-top:150px ;
+}

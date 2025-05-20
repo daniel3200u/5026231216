@@ -1,0 +1,32 @@
+
+body{
+    font-family: Inter;
+    background-color: rgb(255, 252, 252);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    margin-left: 200px;
+    margin-right: 200px;
+    }
+p{
+    font-size: 16px;
+    text-decoration: solid;
+    color: blue;
+    }
+a:link{
+    color:black;
+    text-decoration: none;
+        }
+a:hover{
+    color:rgb(251, 255, 0);
+    text-decoration: solid;
+    /* font-weight: bolder; */
+}
+a:visited{
+    color:black;
+    text-decoration: none;
+}
+.kalimatpembuka{
+    font-size: x-large;
+    border:chocolate;
+    border-radius: 50px;
+}

@@ -1,0 +1,31 @@
+:root{
+    --blue:#1e90ff;
+    --red:#ff0000;
+    --ki:200px;
+}
+p.id1{
+    --blue:#ffaebe;
+    --white:#ffaebe;
+    color: var(--white);
+    white-space: nowrap;
+    width: 300px;
+    border: 2px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p.id2{
+    color:var(--white);
+    width: 300px;
+    border:2px solid #000000;
+    word-wrap: break-word;
+}
+p.id3{
+    color: brown;
+    width: ki;
+    border: 2px solid #000000;
+    word-break: break-all;
+}
+p.id4{
+    color: blueviolet;
+    writing-mode: vertical-lr;
+}
