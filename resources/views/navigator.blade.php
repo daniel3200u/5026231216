@@ -53,8 +53,8 @@
             <!-- Kolom 3 -->
             <div class="col-md-4 d-grid gap-3">
                 <a href="{{ route('bootstrap1') }}" class="btn btn-outline-danger">bootstrap1</a>
-                {{-- <a href="{{ route('project') }}" class="btn btn-outline-dark">Project</a>
-                <a href="{{ route('kontak') }}" class="btn btn-outline-primary">Kontak</a> --}}
+                <a href="{{ route('js2') }}" class="btn btn-outline-dark">js2</a>
+                <a href="{{ route('link') }}" class="btn btn-outline-primary">link</a>
             </div>
         </div>
     </div>

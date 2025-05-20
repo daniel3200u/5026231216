@@ -51,6 +51,12 @@ Route::get('/makeover',function(){
 Route::get('/topikcss',function(){
     return view('topikcss');
 })->name('topikcss');
+Route::get('/js2',function(){
+    return view('js2');
+})->name('js2');
+Route::get('/link',function(){
+    return view('link');
+})->name('link');
 Route::get('/frontend',function(){
     return view('navigator');
 });
