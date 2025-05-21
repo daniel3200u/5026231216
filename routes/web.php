@@ -2,6 +2,8 @@
 //equals with import java.blablabal
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Coba;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,6 +59,15 @@ Route::get('/js2',function(){
 Route::get('/link',function(){
     return view('link');
 })->name('link');
+Route::get('dosen', [Coba::class, 'index']);
 Route::get('/frontend',function(){
     return view('navigator');
 });
+
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
+Route::get('/formulir', [PegawaiController::class, 'formulir']);
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
+
+Route::get('/blog',[BlogController::class,'home']);
+Route::get('/blog/tentang',[BlogController::class,'tentang']);
+Route::get('/blog/kontak',[BlogController::class,'kontak']);
