@@ -78,3 +78,5 @@ Route::post('/pegawai', [PegawaiController::class, 'store'])->name('pegawai.stor
 Route::get('/pegawai/edit/{id}',[PegawaiController::class,'edit']);
 Route::post('/pegawai/{id}', [PegawaiController::class, 'update'])->name('pegawai.update');
 Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+Route::post('/pegawai/proses', [PegawaiDBController::class, 'proses']);
