@@ -5,6 +5,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\tugascrud;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -73,10 +74,19 @@ Route::get('/blog',[BlogController::class,'home']);
 Route::get('/blog/tentang',[BlogController::class,'tentang']);
 Route::get('/blog/kontak',[BlogController::class,'kontak']);
 Route::get('/pegawai',[PegawaiDBController::class,'index']);
-Route::get('/pegawai/tambah',[PegawaiController::class,'tambah']);
-Route::post('/pegawai', [PegawaiController::class, 'store'])->name('pegawai.store');
-Route::get('/pegawai/edit/{id}',[PegawaiController::class,'edit']);
-Route::post('/pegawai/{id}', [PegawaiController::class, 'update'])->name('pegawai.update');
-Route::get('/pegawai/hapus/{id}','PegawaiController@hapus');
+Route::get('/pegawai/tambah',[PegawaiDBController::class,'tambah']);
+Route::post('/pegawai/store', [PegawaiDBController::class, 'store'])->name('pegawai.store');
+Route::get('/pegawai/edit/{id}',[PegawaiDBController::class,'edit']);
+Route::post('/pegawai/{id}', [PegawaiDBController::class, 'update'])->name('pegawai.update');
+Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class,'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 Route::post('/pegawai/proses', [PegawaiDBController::class, 'proses']);
+
+Route::get('/CROT',[tugascrud::class,'index']);
+Route::get('/CROT/tambah',[tugascrud::class,'tambah']);
+Route::post('/CROT/store', [tugascrud::class, 'store'])->name('bolpen.store');
+Route::get('/CROT/cari', [tugascrud::class, 'cari']);
+Route::get('/CROT/edit/{id}',[tugascrud::class,'edit']);
+Route::post('/CROT/{id}', [tugascrud::class, 'update'])->name('bolpen.update');
+Route::get('/CROT/hapus/{id}',[tugascrud::class,'hapus']);
+

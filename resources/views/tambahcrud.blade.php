@@ -1,9 +1,9 @@
 @extends('template')
 
 @section('content')
-	<h3>Data Pegawai</h3>
+	<h3>Data Bolpen</h3>
 
-	<a href="/pegawai" class='btn btn-info'> Kembali</a>
+	<a href="/CROT" class='btn btn-info'> Kembali</a>
 
 	<br/>
 	<br/>
@@ -16,50 +16,49 @@
                                 </ul>
                             </div>
     @endif
-	<form action="/pegawai/store" method="post" class='form-horizontal'>
+	<form action="/CROT/store" method="post" class='form-horizontal'>
 		{{ csrf_field() }}
         <div class="form-group has-success">
             <label class="control-label col-sm-2" for="id1">
-                Nama
+                MERK BOLPEN
             </label>
             <div class="col-sm-6">
                 <input class="form-control"
                    type="text"
-                   id="nama"
-                   placeholder="Masukkan Nama Lengkap" name="nama" required="required">
+                   id="merkbolpen"
+                   placeholder="Masukkan Merk Bolpen" name="merkbolpen" required="required">
             </div>
         </div>
         <div class="form-group has-success">
             <label class="control-label col-sm-2" for="id1">
-                Jabatan
-            </label>
-            <div class="col-sm-6">
-                <input class="form-control"
-                   type="text"
-                   id="jabatan"
-                   placeholder="Masukkan Nama Lengkap" name="jabatan" required="required">
-            </div>
-        </div>
-        <div class="form-group has-success">
-            <label class="control-label col-sm-2" for="id1">
-                Umur
+                Harga
             </label>
             <div class="col-sm-6">
                 <input class="form-control"
                    type="number"
-                   id="umur"
-                   placeholder="Masukkan Nama Lengkap"  name="umur" required="required">
+                   id="hargabolpen"
+                   placeholder="Masukkan harga bolpen" name="hargabolpen" required="required">
+            </div>
+        </div>
+        <div class="form-group has-success">
+            <label class="control-label col-sm-2" for="tersedia">
+                Ketersediaan
+            </label>
+            <div class="col-sm-6">
+                <select class="form-control" id="tersedia" name="tersedia" required="required">
+                    <option value="">-- Pilih Status Ketersediaan --</option>
+                    <option value="1">Tersedia</option> <option value="0">Tidak Tersedia</option> </select>
             </div>
         </div>
         <div class="form-group has-success">
             <label class="control-label col-sm-2" for="id1">
-                alamat
+                Berat
             </label>
             <div class="col-sm-6">
                 <input class="form-control"
-                   type="text"
-                   id="alamat"
-                   placeholder="Masukkan Nama Lengkap"  name="alamat" required="required">
+                   type="number"
+                   id="berat"
+                   placeholder="Masukkan Berat"  step="any"min="0"name="berat" required="required">
             </div>
         </div>
 		<input type="submit" value="Simpan Data">
