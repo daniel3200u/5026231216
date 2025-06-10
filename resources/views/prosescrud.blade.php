@@ -7,7 +7,7 @@
                 <div class="card mt-5">
                     <div class="card-body">
                         <h3>www.malasngoding.com</h3>
-                        <h3 class="my-4">Data Yang Di Input : </h3>
+                        <h3 class="my-4">Data Yang Di Input1 : </h3>
 
                         <table class="table table-bordered table-striped">
                             <tr>

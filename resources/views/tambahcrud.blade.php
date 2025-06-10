@@ -40,6 +40,7 @@
                    placeholder="Masukkan harga bolpen" name="hargabolpen" required="required">
             </div>
         </div>
+
         <div class="form-group has-success">
             <label class="control-label col-sm-2" for="tersedia">
                 Ketersediaan

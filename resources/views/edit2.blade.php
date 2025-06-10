@@ -17,7 +17,7 @@
 	<form action="/CROT/update" method="post">
 		{{ csrf_field() }}
 		<input type="hidden" name="ID" value="{{ $p->ID }}"> <br/>
-		Merk Bolpen <input type="text" required="required" name="merkbolpen" value="{{ $p->merkbolpen }}"> <br/>
+		Merek Bolpen <input type="text" required="required" name="merkbolpen" value="{{ $p->merkbolpen }}"> <br/>
 		harga bolpen <input type="number" required="required" name="hargabolpen" value="{{ $p->hargabolpen }}"> <br/>
 		tersedia <input type="number" required="required" name="tersedia" value="{{ $p->tersedia }}"> <br/>
 		berat <input type="number" required="required" name="berat" value="{{ $p->berat }}"> <br/>

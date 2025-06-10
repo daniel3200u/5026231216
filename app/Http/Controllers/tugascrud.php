@@ -58,6 +58,7 @@ class tugascrud extends Controller
         // passing data pegawai yang didapat ke view edit.blade.php
         return view('edit2',['bolpen' => $bolpen]);
     }
+
     public function proses(Request $request)
     {
         $this->validate($request,[
@@ -68,6 +69,7 @@ class tugascrud extends Controller
 
         return view('proses',['data' => $request]);
     }
+
     public function hapus($id)
     {
         // menghapus data pegawai berdasarkan id yang dipilih
