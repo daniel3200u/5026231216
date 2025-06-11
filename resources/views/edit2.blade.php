@@ -14,7 +14,7 @@
 	<br/>
 
 	@foreach($bolpen as $p)
-	<form action="/CROT/update" method="post">
+	<form action="/index/update" method="post">
 		{{ csrf_field() }}
 		<input type="hidden" name="ID" value="{{ $p->ID }}"> <br/>
 		Merek Bolpen <input type="text" required="required" name="merkbolpen" value="{{ $p->merkbolpen }}"> <br/>
