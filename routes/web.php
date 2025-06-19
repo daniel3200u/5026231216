@@ -8,7 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\tugascrud;
 use App\Http\Controllers\karyawan;
 use App\Http\Controllers\TrafficController;
-
+use App\Http\Controllers\KeranjangBelanjaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -104,4 +104,8 @@ Route::get('/index/hapus/{id}',[karyawan::class,'hapus']);
 
 Route::get('/latihan2', [TrafficController::class, 'index']);
 
-
+Route::get('/keranjangbelanja', [KeranjangBelanjaController::class, 'indexkeranjangbelanja']);
+Route::get('/keranjangbelanja/belikeranjangbelanja/{id}', [KeranjangBelanjaController::class, 'belikeranjangbelanja']);
+Route::get('/keranjangbelanja/batalkeranjangbelanja/{id}', [KeranjangBelanjaController::class, 'batalkeranjangbelanja']);
+Route::post('/keranjangbelanja/storekeranjangbelanja', [KeranjangBelanjaController::class, 'storekeranjangbelanja']);
+Route::post('/keranjangbelanja/updatekeranjangbelanja', [KeranjangBelanjaController::class, 'updatekeranjangbelanja']);
