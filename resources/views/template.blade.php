@@ -36,7 +36,7 @@
                 <a class="nav-link" href="/CROT">Tugas CRUD</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
+                <a class="nav-link" href="/eas">EAS</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/index">Latihan 1</a>
@@ -45,7 +45,7 @@
                 <a class="nav-link" href="/latihan2">Latihan 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
+                <a class="nav-link" href="/keranjangbelanja">Latihan 3</a>
             </li>
         </ul>
     </nav>

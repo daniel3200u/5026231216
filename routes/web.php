@@ -9,6 +9,7 @@ use App\Http\Controllers\tugascrud;
 use App\Http\Controllers\karyawan;
 use App\Http\Controllers\TrafficController;
 use App\Http\Controllers\KeranjangBelanjaController;
+use App\Http\Controllers\nilaiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -109,3 +110,8 @@ Route::get('/keranjangbelanja/belikeranjangbelanja/{id}', [KeranjangBelanjaContr
 Route::get('/keranjangbelanja/batalkeranjangbelanja/{id}', [KeranjangBelanjaController::class, 'batalkeranjangbelanja']);
 Route::post('/keranjangbelanja/storekeranjangbelanja', [KeranjangBelanjaController::class, 'storekeranjangbelanja']);
 Route::post('/keranjangbelanja/updatekeranjangbelanja', [KeranjangBelanjaController::class, 'updatekeranjangbelanja']);
+
+
+Route::get('/eas', [nilaiController::class, 'index']);
+Route::get('/eas/tambah', [nilaiController::class, 'tambah']);
+Route::post('/eas/store', [nilaiController::class, 'store']);
